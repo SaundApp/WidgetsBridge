@@ -15,8 +15,9 @@ public class WidgetsBridgePlugin extends Plugin {
     public void setItem(PluginCall call) {
         String key = call.getString("key");
         String value = call.getString("value");
+        String group = call.getString("group");
 
-        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getContext().getSharedPreferences(group, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString(key, value);
         editor.apply();
