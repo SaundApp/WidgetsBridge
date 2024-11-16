@@ -51,12 +51,12 @@ reloadTimeline(options: { kind: string; javaName?: string; }) => Promise<void>
 ### reloadAllTimelines(...)
 
 ```typescript
-reloadAllTimelines(options: { javaNames?: string[]; }) => Promise<void>
+reloadAllTimelines(options: { javaName?: string; }) => Promise<void>
 ```
 
-| Param         | Type                                   |
-| ------------- | -------------------------------------- |
-| **`options`** | <code>{ javaNames?: string[]; }</code> |
+| Param         | Type                                |
+| ------------- | ----------------------------------- |
+| **`options`** | <code>{ javaName?: string; }</code> |
 
 --------------------
 
