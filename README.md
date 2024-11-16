@@ -15,7 +15,7 @@ npx cap sync
 
 * [`setItem(...)`](#setitem)
 * [`reloadTimeline(...)`](#reloadtimeline)
-* [`reloadAllTimelines()`](#reloadalltimelines)
+* [`reloadAllTimelines(...)`](#reloadalltimelines)
 
 </docgen-index>
 
@@ -38,21 +38,25 @@ setItem(options: { key: string; group: string; value: string; }) => Promise<void
 ### reloadTimeline(...)
 
 ```typescript
-reloadTimeline(options: { kind: string; }) => Promise<void>
+reloadTimeline(options: { kind: string; javaName?: string; }) => Promise<void>
 ```
 
-| Param         | Type                           |
-| ------------- | ------------------------------ |
-| **`options`** | <code>{ kind: string; }</code> |
+| Param         | Type                                              |
+| ------------- | ------------------------------------------------- |
+| **`options`** | <code>{ kind: string; javaName?: string; }</code> |
 
 --------------------
 
 
-### reloadAllTimelines()
+### reloadAllTimelines(...)
 
 ```typescript
-reloadAllTimelines() => Promise<void>
+reloadAllTimelines(options: { javaNames?: string[]; }) => Promise<void>
 ```
+
+| Param         | Type                                   |
+| ------------- | -------------------------------------- |
+| **`options`** | <code>{ javaNames?: string[]; }</code> |
 
 --------------------
 
