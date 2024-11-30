@@ -1,6 +1,6 @@
 {
   "name": "@saundapp/widgetsbridge",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Sync data between capacitor and native code to run widgets",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
