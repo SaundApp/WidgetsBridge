@@ -38,12 +38,12 @@ setItem(options: { key: string; group: string; value: string; }) => Promise<void
 ### reloadTimeline(...)
 
 ```typescript
-reloadTimeline(options: { kind: string; javaName?: string; }) => Promise<void>
+reloadTimeline(options: { kind: string; javaClass?: string; }) => Promise<void>
 ```
 
-| Param         | Type                                              |
-| ------------- | ------------------------------------------------- |
-| **`options`** | <code>{ kind: string; javaName?: string; }</code> |
+| Param         | Type                                               |
+| ------------- | -------------------------------------------------- |
+| **`options`** | <code>{ kind: string; javaClass?: string; }</code> |
 
 --------------------
 
@@ -51,12 +51,12 @@ reloadTimeline(options: { kind: string; javaName?: string; }) => Promise<void>
 ### reloadAllTimelines(...)
 
 ```typescript
-reloadAllTimelines(options: { javaName?: string; }) => Promise<void>
+reloadAllTimelines(options: { javaClass?: string; }) => Promise<void>
 ```
 
-| Param         | Type                                |
-| ------------- | ----------------------------------- |
-| **`options`** | <code>{ javaName?: string; }</code> |
+| Param         | Type                                 |
+| ------------- | ------------------------------------ |
+| **`options`** | <code>{ javaClass?: string; }</code> |
 
 --------------------
 
